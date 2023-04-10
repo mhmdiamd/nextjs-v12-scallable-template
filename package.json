@@ -2,6 +2,11 @@
   "name": "nextjs-scallable-template",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node" : ">=14.0.0",
+    "npm" : ">=9.5.0",
+    "yarn" : "Please Use Npm"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
