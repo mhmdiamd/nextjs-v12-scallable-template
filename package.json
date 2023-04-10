@@ -8,7 +8,7 @@
     "yarn": "Please Use Npm"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -16,7 +16,6 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@next/font": "13.3.0",
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -27,6 +26,7 @@
     "@types/node": "18.15.11",
     "@types/react": "18.0.34",
     "@types/react-dom": "18.0.11",
+    "cross-env": "^7.0.3",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "husky": "^8.0.3",
