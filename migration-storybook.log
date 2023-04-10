@@ -1,0 +1,35 @@
+🔎 checking possible migrations..
+
+attention => Storybook now collects completely anonymous telemetry regarding usage.
+This information is used to shape Storybook's roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://storybook.js.org/telemetry
+
+
+🔎 found a 'eslintPlugin' migration:
+╭ Automigration detected ─────────────────────────────────────────╮
+│                                                                 │
+│   We've detected you are not using our eslint-plugin.           │
+│                                                                 │
+│   In order to have the best experience with Storybook and       │
+│   follow best practices, we advise you to install               │
+│   eslint-plugin-storybook.                                      │
+│                                                                 │
+│   More info: https://github.com/storybookjs/eslint-plugin-sto   │
+│   rybook#readme                                                 │
+│                                                                 │
+╰─────────────────────────────────────────────────────────────────╯
+? Do you want to run the 'eslintPlugin' migration on your project? » (Y/n)√ Do you want to run the 'eslintPlugin' migration on your project? ... yes
+✅ Adding dependencies: eslint-plugin-storybook
+✅ Adding Storybook plugin to .eslintrc.json
+❌ error when running eslintPlugin migration
+SyntaxError: .eslintrc.json: Unexpected token , in JSON at position 16
+    at JSON.parse (<anonymous>)
+    at _readFile (C:\Users\User\AppData\Local\npm-cache\_npx\d28cfb4b54958d89\node_modules\jsonfile\index.js:25:16)
+    at async Object.run (C:\Users\User\AppData\Local\npm-cache\_npx\d28cfb4b54958d89\node_modules\@storybook\cli\dist\generate.js:121:142)
+    at async runFixes (C:\Users\User\AppData\Local\npm-cache\_npx\d28cfb4b54958d89\node_modules\@storybook\cli\dist\generate.js:322:1144)
+    at async automigrate (C:\Users\User\AppData\Local\npm-cache\_npx\d28cfb4b54958d89\node_modules\@storybook\cli\dist\generate.js:317:636)
+    at async doInitiate (C:\Users\User\AppData\Local\npm-cache\_npx\d28cfb4b54958d89\node_modules\@storybook\cli\dist\generate.js:352:373)
+    at async withTelemetry (C:\Users\User\AppData\Local\npm-cache\_npx\d28cfb4b54958d89\node_modules\@storybook\core-server\dist\index.js:35:3422)
+    at async initiate (C:\Users\User\AppData\Local\npm-cache\_npx\d28cfb4b54958d89\node_modules\@storybook\cli\dist\generate.js:363:109)
+
